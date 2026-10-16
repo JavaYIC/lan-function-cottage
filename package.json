@@ -1,0 +1,23 @@
+{
+  "name": "function-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
+    "build": "vite build",
+    "build:pages": "vite build --base=./ --outDir=dist-pages",
+    "preview:pages": "vite preview --outDir=dist-pages --host 127.0.0.1 --port 5178 --strictPort",
+    "preview": "vite preview --host 127.0.0.1 --port 5178 --strictPort",
+    "check": "node scripts/check-content.mjs && node --test scripts/progress.test.mjs scripts/graph.test.mjs scripts/access.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "katex": "0.19.0",
+    "lucide-react": "1.57.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}

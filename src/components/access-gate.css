@@ -1,0 +1,45 @@
+.header-tools { display: flex; align-items: center; gap: 3px; flex-shrink: 0; }
+.access-page { min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 36px 24px; background: radial-gradient(ellipse at 20% 15%,#dbeadc65,transparent 50%),#f7f9f6; }
+.access-brand { margin-bottom: 32px; text-decoration: none; }
+.access-card { width: min(100%,460px); padding: 36px; background: #fff; border: 1px solid #dce6df; border-radius: 20px; box-shadow: 0 16px 60px #183e340c; }
+.access-lock { display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border: 1px solid #d5e4d8; border-radius: 15px; color: #367c62; background: #f0f6ed; margin-bottom: 22px; }
+.access-eyebrow { font-size: 12px; color: #6c8173; letter-spacing: .09em; margin-bottom: 10px; }
+.access-card h1 { font-size: 28px; line-height: 1.45; letter-spacing: -.04em; margin-bottom: 12px; }
+.access-description { font-size: 14px; color: #6c8173; line-height: 1.8; margin-bottom: 27px; }
+.access-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.access-input-wrap { display: flex; border: 1px solid #c9dacf; background: #fcfdfb; border-radius: 10px; overflow: hidden; }
+.access-input-wrap:focus-within { border-color: #367c62; outline: 3px solid #367c6218; outline-offset: 1px; }
+.access-input-wrap input { width: 100%; min-width: 0; min-height: 54px; padding: 13px 15px; font: inherit; font-size: 20px; letter-spacing: .12em; color: #183e34; background: transparent; border: 0; outline: 0; }
+.access-eye { flex-shrink: 0; display: grid; place-items: center; width: 48px; min-height: 48px; color: #6c8173; border: 0; background: transparent; cursor: pointer; }
+.access-eye:focus-visible { outline: 2px solid #367c62; outline-offset: -4px; border-radius: 8px; }
+.access-remember { display: flex; align-items: center; gap: 9px; min-height: 44px; font-size: 13px; color: #6c8173; margin-top: 12px; cursor: pointer; }
+.access-remember input { width: 18px; height: 18px; accent-color: #367c62; }
+.access-error { min-height: 27px; font-size: 13px; color: #a1633e; padding: 3px 0; }
+.access-submit { width: 100%; min-height: 52px; justify-content: space-between; padding-inline: 19px; }
+.access-submit:disabled { opacity: .65; cursor: wait; }
+.access-note { font-size: 11px; color: #809084; margin-top: 23px; line-height: 1.8; }
+.access-footer { color: #829086; font-size: 12px; margin-top: 26px; }
+.access-storage-note { background: #fff6e8; color: #76542b; padding: 12px 24px; text-align: center; font-size: 13px; }
+@media(max-width:600px) { .header-tools .backup-button { font-size: 12px; padding: 7px 8px; gap: 5px; } .header-tools .backup-button svg { width: 16px; } .access-page { padding: 28px 20px; } .access-card { padding: 28px 24px; } .access-card h1 { font-size: 25px; } .access-brand { margin-bottom: 26px; } }
+/* Warm entry palette is scoped to the password page. */
+.access-page { color: #674d3d; background: radial-gradient(ellipse at 18% 12%,#f1dcc187,transparent 52%),radial-gradient(ellipse at 88% 86%,#ecd6c26b,transparent 48%),#fbf6ee; }
+.access-brand { color: #674d3d; gap: 12px; margin-bottom: 30px; }
+.access-brand .brand-f { color: #ab7955; }
+.access-brand h1 { margin: 0; font: inherit; font-weight: 600; letter-spacing: -.025em; }
+.access-card { background: #fffdf8; border-color: #e7d9c7; border-radius: 23px; box-shadow: 0 18px 65px #8a634510, inset 0 1px 0 #fff; padding: 38px; }
+.access-lock { color: #a77551; background: #f7eddf; border-color: #ecd9bf; border-radius: 16px; margin-bottom: 19px; }
+.access-eyebrow { color: #846e5c; font-size: 13px; margin-bottom: 30px; letter-spacing: .045em; }
+.access-label { color: #725641; }
+.access-input-wrap { background: #fffaf2; border-color: #e2d3bf; border-radius: 12px; }
+.access-input-wrap:focus-within { border-color: #ae7b55; outline-color: #b98c5f20; }
+.access-input-wrap input { color: #674d3d; }
+.access-eye, .access-remember { color: #806854; }
+.access-eye:focus-visible { outline-color: #a77551; }
+.access-remember input { accent-color: #a77551; }
+.access-page .access-submit { background: #9d6b4e; color: #fffaf4; border-radius: 12px; box-shadow: 0 5px 16px #9d6b4e1c,inset 0 1px 0 #ffffff1a; }
+.access-page .access-submit:hover:not(:disabled) { background: #87583e; }
+.access-page .access-submit:focus-visible { outline-color: #b78660; }
+.access-note { color: #806c5b; }
+.access-footer { color: #806c5b; }
+.access-error { color: #a45d3e; }
+@media(max-width:600px) { .access-card { padding: 29px 26px; } .access-brand { font-size: 23px; } }
